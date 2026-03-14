@@ -1,73 +1,96 @@
 # 🧩 design-patterns-playground
 
-A structured reference repository for **Gang of Four (GoF) Design Patterns** implemented in Java using Spring Boot. Each pattern lives on its own dedicated branch, making it easy to study, clone, and experiment with patterns individually.
+A structured reference repository for **Gang of Four (GoF) Design Patterns** implemented in Java using Spring Boot.
+Each pattern lives on its own **categorized branch**, making it easy to study, clone, and experiment with patterns individually.
 
 ---
 
 ## 🚀 Tech Stack
 
-| Tool | Version |
+| Tool | Details |
 |------|---------|
 | Java | 17+ |
-| Spring Boot | Latest Stable |
-| Build Tool | Maven |
+| Spring Boot | REST + Dependency Injection |
+| Lombok | Boilerplate reduction |
+| Maven | Build tool |
 
 ---
 
-## 📂 Branch Structure
+## 📂 Branch Naming Convention
 
-Each design pattern is implemented on its own branch. Switch to a branch to explore that pattern's code, examples, and use cases.
+Every pattern branch follows this structure:
 
-### ✅ Implemented Patterns
+```
+{category}/{pattern-name}
+```
 
-| Category | Pattern | Branch | Status |
-|----------|---------|--------|--------|
-| Behavioral | Strategy | `strategy-pattern` | ✅ Done |
+| Category | Prefix |
+|----------|--------|
+| Behavioral | `behavioral/` |
+| Creational | `creational/` |
+| Structural | `structural/` |
+
+**Example:**
+```
+behavioral/strategy-pattern
+behavioral/chain-of-responsibility-pattern
+creational/singleton-pattern
+structural/adapter-pattern
+```
+
+> 💡 GitHub groups branches by `/` prefix — so all behavioral patterns appear together in the branch dropdown automatically.
 
 ---
 
-### 🗺️ Roadmap — Patterns To Be Added
+## 📖 Pattern Index
 
-#### Creational
-| Pattern | Branch (Planned) |
-|---------|-----------------|
-| Singleton | `singleton-pattern` |
-| Factory Method | `factory-method-pattern` |
-| Abstract Factory | `abstract-factory-pattern` |
-| Builder | `builder-pattern` |
-| Prototype | `prototype-pattern` |
+### 🟢 Behavioral Patterns
+> Deal with communication and responsibility between objects.
 
-#### Structural
-| Pattern | Branch (Planned) |
-|---------|-----------------|
-| Adapter | `adapter-pattern` |
-| Bridge | `bridge-pattern` |
-| Composite | `composite-pattern` |
-| Decorator | `decorator-pattern` |
-| Facade | `facade-pattern` |
-| Flyweight | `flyweight-pattern` |
-| Proxy | `proxy-pattern` |
+| Pattern | Branch | Status |
+|---------|--------|--------|
+| Strategy | `behavioral/strategy-pattern` | ✅ Done |
+| Chain of Responsibility | `behavioral/chain-of-responsibility-pattern` | 🔜 Planned |
+| Command | `behavioral/command-pattern` | 🔜 Planned |
+| Iterator | `behavioral/iterator-pattern` | 🔜 Planned |
+| Mediator | `behavioral/mediator-pattern` | 🔜 Planned |
+| Memento | `behavioral/memento-pattern` | 🔜 Planned |
+| Observer | `behavioral/observer-pattern` | 🔜 Planned |
+| State | `behavioral/state-pattern` | 🔜 Planned |
+| Template Method | `behavioral/template-method-pattern` | 🔜 Planned |
+| Visitor | `behavioral/visitor-pattern` | 🔜 Planned |
 
-#### Behavioral
-| Pattern | Branch (Planned) |
-|---------|-----------------|
-| Chain of Responsibility | `chain-of-responsibility-pattern` |
-| Command | `command-pattern` |
-| Iterator | `iterator-pattern` |
-| Mediator | `mediator-pattern` |
-| Memento | `memento-pattern` |
-| Observer | `observer-pattern` |
-| State | `state-pattern` |
-| Template Method | `template-method-pattern` |
-| Visitor | `visitor-pattern` |
+---
+
+### 🔵 Creational Patterns
+> Deal with object creation mechanisms.
+
+| Pattern | Branch | Status |
+|---------|--------|--------|
+| Singleton | `creational/singleton-pattern` | 🔜 Planned |
+| Factory Method | `creational/factory-method-pattern` | 🔜 Planned |
+| Abstract Factory | `creational/abstract-factory-pattern` | 🔜 Planned |
+| Builder | `creational/builder-pattern` | 🔜 Planned |
+| Prototype | `creational/prototype-pattern` | 🔜 Planned |
+
+---
+
+### 🟠 Structural Patterns
+> Deal with object composition and structure.
+
+| Pattern | Branch | Status |
+|---------|--------|--------|
+| Adapter | `structural/adapter-pattern` | 🔜 Planned |
+| Bridge | `structural/bridge-pattern` | 🔜 Planned |
+| Composite | `structural/composite-pattern` | 🔜 Planned |
+| Decorator | `structural/decorator-pattern` | 🔜 Planned |
+| Facade | `structural/facade-pattern` | 🔜 Planned |
+| Flyweight | `structural/flyweight-pattern` | 🔜 Planned |
+| Proxy | `structural/proxy-pattern` | 🔜 Planned |
 
 ---
 
 ## ⚡ Getting Started
-
-### Prerequisites
-- Java 17+
-- Maven 3.8+
 
 ### Clone the repository
 
@@ -79,17 +102,41 @@ cd design-patterns-playground
 ### Switch to a pattern branch
 
 ```bash
-# Example: explore the Strategy Pattern
-git checkout strategy-pattern
+# Behavioral
+git checkout behavioral/strategy-pattern
+
 ```
 
 ### Build & Run
 
 ```bash
 ./mvnw spring-boot:run
-# or on Windows
+# Windows
 mvnw.cmd spring-boot:run
 ```
+
+---
+
+## 🗂️ How This Repo Is Organized
+
+```
+master                          → README, parent pom, .gitignore (index only)
+│
+├── behavioral/
+│   ├── strategy-pattern        → Car Manufacturer Lookup
+│   ├── chain-of-responsibility → (coming soon)
+│   └── observer-pattern        → (coming soon)
+│
+├── creational/
+│   ├── singleton-pattern       → (coming soon)
+│   └── factory-method-pattern  → (coming soon)
+│
+└── structural/
+    ├── adapter-pattern         → (coming soon)
+    └── decorator-pattern       → (coming soon)
+```
+
+> `master` acts as the **table of contents** — all pattern source code lives on its own branch.
 
 ---
 
