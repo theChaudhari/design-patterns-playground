@@ -68,7 +68,7 @@ structural/adapter-pattern
 | Pattern | Branch | Status |
 |---------|--------|--------|
 | Singleton | `creational/singleton-pattern` | 🔜 Planned |
-| Factory Method | `creational/factory-method-pattern` | 🔜 Planned |
+| Factory Method | `creational/factory-method-pattern` |✅ Done|
 | Abstract Factory | `creational/abstract-factory-pattern` | 🔜 Planned |
 | Builder | `creational/builder-pattern` | 🔜 Planned |
 | Prototype | `creational/prototype-pattern` | 🔜 Planned |
