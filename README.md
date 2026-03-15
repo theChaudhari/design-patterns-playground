@@ -47,10 +47,10 @@ structural/adapter-pattern
 ### 🟢 Behavioral Patterns
 > Deal with communication and responsibility between objects.
 
-| Pattern | Branch | Status |
-|---------|--------|--------|
-| Strategy | `behavioral/strategy-pattern` | ✅ Done |
-| Chain of Responsibility | `behavioral/chain-of-responsibility-pattern` | 🔜 Planned |
+| Pattern | Branch | Status    |
+|---------|--------|-----------|
+| Strategy | `behavioral/strategy-pattern` | ✅ Done    |
+| Chain of Responsibility | `behavioral/chain-of-responsibility-pattern` | ✅ Done    |
 | Command | `behavioral/command-pattern` | 🔜 Planned |
 | Iterator | `behavioral/iterator-pattern` | 🔜 Planned |
 | Mediator | `behavioral/mediator-pattern` | 🔜 Planned |
