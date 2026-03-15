@@ -86,7 +86,7 @@ structural/adapter-pattern
 | Decorator | `structural/decorator-pattern` | 🔜 Planned |
 | Facade | `structural/facade-pattern` | 🔜 Planned |
 | Flyweight | `structural/flyweight-pattern` | 🔜 Planned |
-| Proxy | `structural/proxy-pattern` | 🔜 Planned |
+| Proxy | `structural/proxy-pattern` | ✅ Done |
 
 ---
 
