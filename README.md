@@ -55,7 +55,7 @@ structural/adapter-pattern
 | Iterator | `behavioral/iterator-pattern` | 🔜 Planned |
 | Mediator | `behavioral/mediator-pattern` | 🔜 Planned |
 | Memento | `behavioral/memento-pattern` | 🔜 Planned |
-| Observer | `behavioral/observer-pattern` | 🔜 Planned |
+| Observer | `behavioral/observer-pattern` |✅ Done  |
 | State | `behavioral/state-pattern` | 🔜 Planned |
 | Template Method | `behavioral/template-method-pattern` | 🔜 Planned |
 | Visitor | `behavioral/visitor-pattern` | 🔜 Planned |
